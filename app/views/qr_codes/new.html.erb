@@ -1,0 +1,21 @@
+<h1>QrCodes#new</h1>
+<p>Find me in app/views/qr_codes/new.html.erb</p>
+
+<button id="snapshot">Snapshot</button>
+<button id="filter">Random Filter</button>
+<div class="video-container">
+  <video id="video" autoplay></video>
+  <canvas></canvas>
+</div>
+
+<p></p>
+
+
+
+
+
+<%= form_for :qr_code, url: qr_codes_path do |f| %>
+  <%= f.label :text %>
+  <%= f.text_field :text %>
+  <%= f.submit %>
+<% end %>
